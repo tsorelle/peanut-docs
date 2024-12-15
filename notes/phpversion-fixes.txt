@@ -1,0 +1,27 @@
+
+Deprecated: trim(): Passing null to parameter #1 ($string) of type string is deprecated in D:\dev\twoquakers\peanut2\peanut2.core\web.root\nutshell\src\cms\Router.php on line 205
+$rolelist = RouteFinder::$matched['roles'] ?? null;
+fix:
+$rolelist = RouteFinder::$matched['roles'] ?? '';
+
+Deprecated: Optional parameter $ini declared before required parameter $message is implicitly treated as a required parameter in D:\dev\twoquakers\peanut2\peanut2.core\web.root\nutshell\src\tops\sys\TConfiguration.php on line 69
+private static function addError(array $ini = array(), $message)
+fix:
+ private static function addError(array $ini = array(), $message='')
+
+Warning: Undefined variable $mvvm in D:\dev\twoquakers\peanut2\peanut2.core\web.root\application\content\page.php on line 62
+    <?php if ($mvvm) { ?>
+fix:
+<?php if (isset($mvvm)) { ?>
+
+Warning: Undefined variable $menu in D:\dev\twoquakers\peanut2\peanut2.core\web.root\application\content\page.php on line 95
+if ($menu=='left') {
+if (isset($menu) && $menu=='left') {
+Warning: Undefined variable $menu in D:\dev\twoquakers\peanut2\peanut2.core\web.root\application\content\page.php on line 104
+
+Warning: Undefined property: stdClass::$icon in D:\dev\twoquakers\peanut2\peanut2.core\web.root\nutshell\src\cms\SiteMap.php on line 158
+$linkText = $item->icon ? sprintf('<i class="%s" ></i>',$item->icon) : $item->title;
+
+Tools:
+https://odan.github.io/2020/12/22/php8-compatibility-check.html
+https://www.php.net/manual/en/migration80.php
