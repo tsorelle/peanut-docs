@@ -17,7 +17,7 @@ These indicated the latest versions used in testing on this site as of update.
 
 ### For UI features
 - [Bootstrap](https://getbootstrap.com/) 5.x
-- [Fontawesome](https://fontawesome.com/) 6.x, use kit id e3f06c8db4
+- [Fontawesome](https://fontawesome.com/) 6.x
 - [SASS](https://sass-lang.com/) and [LESS](https://lesscss.org/). These are scripting languages used to produce
 css files. SASS is used in ConcreteCMS 9 and is preferred.
 
