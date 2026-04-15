@@ -1,1 +1,1 @@
-For a directory of documentation go to [Documentation](docs/index.md)
+For a directory of documentation go to [Documentation](documentation/index.md)
