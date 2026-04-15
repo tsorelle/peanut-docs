@@ -31,6 +31,15 @@ The core application of the Peanut framework. Used in particular implementations
 
 ## QNUT
 A set of Peanut packages that are used to implement website features for Quaker Meetings and Organizations.
+
+QNUT includes these features and more:
+- Member directory
+- Committee directory
+- Document library
+- Mailing lists
+- Committee pages
+- Calender integration with committee system and notifications.
+
 ### Dependencies
 - Peanut Core (see above)
 
