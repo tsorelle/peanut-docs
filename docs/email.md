@@ -4,7 +4,7 @@
 
 ### SendMessage from Us
 
-```phpt
+```php
 public static function SendMessageFromUs(
     $recipients, $subject, $bodyText, 
     $addressId=self::DefaultMailbox, 
@@ -27,7 +27,7 @@ The optional $addressId parameter is a mailbox code.
 
 
 ## Template Example
-```phpt
+```php
 $templateManager = new MailTemplateManager();
 $template = $templateManager->getTemplateContent('SiteAnnouncement.html');
 

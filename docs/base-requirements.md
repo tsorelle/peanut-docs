@@ -12,7 +12,7 @@ These indicated the latest versions used in testing on this site as of update.
 - [Typescript](https://www.typescriptlang.org/) 5.4.3 (bundled with PHPStorm)
 - [Knockout JS](https://www.typescriptlang.org/) 3.5.1
 - [Head JS](https://headjs.github.io/) v1.0.3
-- [JQuery](https://jquery.com/) 3.6.0  (jquery mainly used for Ajax calls)
+- [JQuery](https://jquery.com/) 3.6.0  (jquery only used for Ajax calls)
 - [Node JS](https://nodejs.org/en/) v20.11.0 (development only)
 
 ### For UI features
@@ -20,6 +20,8 @@ These indicated the latest versions used in testing on this site as of update.
 - [Fontawesome](https://fontawesome.com/) 6.x
 - [SASS](https://sass-lang.com/) and [LESS](https://lesscss.org/). These are scripting languages used to produce
 css files. SASS is used in ConcreteCMS 9 and is preferred.
+
+JQuery Ajax and HeadJS are included in PEANUT
 
 ### Deprecated:
 - LoDash or Underscore, use ES6 JavaScript for string and array functions.

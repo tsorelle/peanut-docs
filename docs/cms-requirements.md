@@ -1,6 +1,6 @@
 # Peanut Base Structure
 
-In this document we want to describle the essential requirements, directory structure and files
+In this document we want to describe the essential requirements, directory structure and files
 that make up a Peanut installation on a CMS host.
 
 **Terminology disambiguation:** The term "package" is used in ConcreteCMS to refer to installable modules,
@@ -17,43 +17,6 @@ ConcreteCMS will refer to versions 8.0 and later or generically to ConcreteXXX.
 Concrete5 will refer to earlier versions.  
 
 ## Start up requirements
-### Service Messages header
-This markup is need on every page that may host Peanut service calls:
-````html
-<!-- Peanut service messages container -->
-<div class="container" id="peanut-messages">
-    <div class="row">
-        <div class="col-md-12"   >
-            <div id="service-messages-container"><service-messages></service-messages></div>
-        </div>
-    </div>
-</div>
-````
-This example markup works with Bootstrap 3 and above.
-
-Styling must be included as in this example:
-````html
-<!-- Styling for peanut service messages -->
-<style>
-    #error-messages {
-        border: 1px solid darkred;
-        margin-top: 10px;
-    }
-    #info-message {
-        border: 1px solid darkgreen;
-        margin-top: 10px;
-    }
-    #warning-messages {
-        border: 1px solid darkblue;
-        margin-top: 10px;
-    }
-    #peanut-messages {
-        position:fixed;top:0;
-        z-index: 16777271;
-        width:100%
-    }
-</style>
-````
 
 ### Required JS scripts
 The following scripts must be referenced at the top of the page.
@@ -137,9 +100,6 @@ E.g.<br>
 ````typescript
 application.loadResources(
     [
-        '@lib:jqueryui-css',
-        '@lib:jqueryui-js',
-        '@lib:lodash',
         '@pnut/ViewModelHelpers',
         '@pnut/editPanel',
         '@pnut/searchListObservable',
@@ -161,7 +121,6 @@ various implementations we need to take account of what libraries are included w
 The application/assets directory contains javascript libraries and other item used by peanut,
 but not necessarily included in the CMS.  In loading routines such as 'application.loadResources()'
 the prefix "@lib:" resolves to this location.
-
 
 
 ## Applications
