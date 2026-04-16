@@ -5,24 +5,15 @@ with others for particular use cases.
 
 For more detailed documentation see the [Peanut-docs repository](https://github.com/tsorelle/peanut-docs/blob/master/documentation/index.md).
 
-## TOPS Core
-PHP Library for building Peanut applications.  Primarily used for report service implementation, data access framework,
-general system utilities.
-
-### Reference Application Repository
-
-[Tops-core](https://github.com/tsorelle/Tops-core) (public)
-
-### Dependencies
-- [PHP](https://www.php.net/) Programming language used for websites and general uses.
 
 ## Peanut Core
 The core application of the Peanut framework. Used in particular implementations such as CMS modules and Nutshell Applications.
+Includes the TOPS library of PHP code for services and data access.
 ### Reference Application Repository
 [Peanut-core](https://github.com/tsorelle/Tops-core) (public)
 
 ### Dependencies
-- TOPS Core (see above)
+- [PHP](https://www.php.net/) Programming language used for websites and general uses.
 - [TypeScript](https://www.typescriptlang.org/) The front end language used for the Peanut framework. Compiles to JavaScript.
 - [HeadJs](https://github.com/headjs/headjs) a simple JavaScript loader.
 - [jQuery/Ajax](http://jquery.com/) A JavaScript library for remote service calls extracted from the JQuery library.
